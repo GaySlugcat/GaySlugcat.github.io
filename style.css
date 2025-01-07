@@ -1,0 +1,136 @@
+/* 
+
+    BEFORE YOU EDIT ANYTHING: do not touch any code in here unless following instructions within inline comments 
+    
+*/
+
+
+/* body styling */
+body {
+    
+    /* this will edit the background. you can change the hex code to whatever color you'd like. use this site to pick a hex code: https://imagecolorpicker.com/
+       if you want to change it to a gradient, pattern, or image, follow this link: https://www.w3schools.com/css/css_background_shorthand.asp */
+    background: #b2b3b3 !important;
+
+}
+/* global paragraph styling */
+p {
+
+    /* this attribute controls the distance between the bottom of the paragraph and anything below it.
+       feel free to edit it to your liking by changing the numerical value. */
+    margin-bottom: 0.5em !important;
+
+    /* this attribute makes the text space itself out accross lines so that the end of each line is perfectly even with the others.
+       if you don't like how this looks, delete this attribute. */
+    text-align: justify;
+    
+    /* this attribute changes the size of the text on the page.
+       feel free to edit it to your liking by changing the numerical value.
+       1em = 16px. 16px is the default text size for most web browsers. */
+    font-size: 0.9em;
+}
+
+/* text & decor colors */
+
+    /* primary - #1e81b0
+       use CTRL + F to quickly replace the primary hex code with your desired hex code. */
+    .primary-txt {
+        color: #1e81b0;
+    }
+
+    /* minor - #606060
+       use CTRL + F to quickly replace the minor hex code with your desired hex code. */
+    .minor-txt {
+        color: #606060;
+    }
+
+    /* secondary - #76b5c5
+       use CTRL + F to quickly replace the minor hex code with your desired hex code. */
+    .secondary-txt {
+        color: #76b5c5 !important;
+    }
+    .secondary-bgcolor {
+        background-color: #76b5c5 !important;
+    }
+
+/* specific element styling */
+
+    /* this class is for the container of all the actual page content */
+    .pagecontent {
+
+        /* you can change the color or opacity of the container background if you'd like.
+           to change opacity, follow this link and scroll down to "transparency using RGBA" https://www.w3schools.com/css/css_background.asp
+           this site provides RGB codes as well as hex codes: https://imagecolorpicker.com/color-code/ffffff */
+        background-color: rgba(255, 255, 255, 0.5);
+
+        /* this attribute controls how rounded the corners are. you can change how rounded they are by changing the numerical value to your liking, or change it to 0 for sharp corners.*/
+        border-radius: 0.5em;
+
+    }
+
+    /* this class controls the cards where all the info is. you can change the color or corner roundedness. */
+    .pagecard {
+        background-color: #fff;
+        border-radius: 0.5em;
+
+        /* this attribute controls the distance between the content and the edge of the container. i would not reccommend changing it. */
+        padding: 0.65em;
+    }
+
+    /* this class controls the look of the small text denoting personality traits on the trait sliders. 
+       you can change the size and color here. */
+    .personality-slider-trait {
+        color: #7c7c7c;
+        font-size: 0.75em;
+    }
+
+    /* this class controls the background color of the progress bars used to make trait sliders.
+       this color will show up in the right side of the progress bar for any width percentage below 100. */
+    .slider-1 {
+        background-color: #154c79 !important;
+    }
+
+    /* these classes control the size and distance between a few elements
+
+                DO NOT EDIT THESE
+    
+    */
+    .char-img-1 {
+        min-height: 300px !important;
+        height: 100% !important;
+        margin-right: 0.5em !important;
+    }
+    .char-img-2 {
+        min-height: 300px !important;
+        height: 100% !important;
+        margin-left: 0.5em !important;
+    }
+    .pagefear {
+        margin-right: 0.5em !important;
+        height: 100% !important;
+    }
+    .enneagramcard {
+        margin-left: 0.5em !important;
+    }
+    .backstorycard {
+        margin-right: 0.5em !important;
+    }
+
+/* responsive code - DO NOT TOUCH */
+@media only screen and (max-width: 768px) {
+    .char-img-1 {
+        margin-right: 0 !important;
+    }
+    .char-img-2 {
+        margin-left: 0 !important;
+    }
+    .pagefear {
+        margin-right: 0 !important;
+    }
+    .enneagramcard {
+        margin-left: 0 !important;
+    }
+    .backstorycard {
+        margin-right: 0 !important;
+    }
+}
